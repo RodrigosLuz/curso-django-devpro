@@ -37,5 +37,3 @@ jobs:
        pipenv run pytest --cov=django_rodrigo
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
-      run: |
-       pipenv run codecov
