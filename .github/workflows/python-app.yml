@@ -38,4 +38,4 @@ jobs:
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
       run: |
-        pipenv run codecov
+       pipenv run codecov
