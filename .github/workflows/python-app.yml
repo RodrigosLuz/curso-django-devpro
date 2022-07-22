@@ -36,7 +36,9 @@ jobs:
     - name: Test with pytest
       run: |
        pipenv run pytest --cov=django_rodrigo
-    - name: Upload coverage reports to Codecov with GitHub Action
-      uses: pipenv run codecov/codecov-action@v3
-      with:
-        token: ${{ secrets.CURSO_DJANGODEVPRO}}
+    - name: Posting Coverage
+      working-directory: ./django_rodrigo
+      env:
+        CODECOV_TOKEN: ${{ secrets.CURSO_DJANGODEVPRO}}
+      run: |
+        pipenv run codecov
