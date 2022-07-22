@@ -10,6 +10,7 @@ pytest = "*"
 pytest-cov = "*"
 flake8 = "*"
 coverage = "*"
+codecov = "*"
 
 [requires]
 python_version = "3.10"
