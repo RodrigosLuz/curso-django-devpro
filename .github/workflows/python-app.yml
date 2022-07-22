@@ -36,6 +36,6 @@ jobs:
       run: |
        pipenv run pytest --cov=django_rodrigo
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v3 -f
       with:
         token: ${{ secrets.CURSO_DJANGODEVPRO}}
